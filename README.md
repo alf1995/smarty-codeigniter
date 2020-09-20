@@ -31,7 +31,7 @@
   $this->smarty_tpl->view('page_example');
 ```
 
-- Para enviar multiples datos a nuestra plantilla smarty lo podremos realizar de la siguiente forma:
+- Para enviar datos a nuestra plantilla smarty lo podremos realizar de la siguiente forma:
 ```php
   $data1['data_1'] = 'Example 1';
   $data2['data_2'] = 'Example 2';
