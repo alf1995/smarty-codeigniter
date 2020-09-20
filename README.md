@@ -19,9 +19,14 @@
   $ composer install
 ```
 # Uso
+- La libreria ya esta cargada de manera global en nuestro archivo autoload;
+```php
+  $autoload['libraries'] = array('smarty_tpl');
+```
+
 - Creamos una plantilla en nuestra carpeta **template** con el formato **.tpl**
 
 - En nuestro controlador renderizaremos la vista usando:
 ```php
- $this->smarty_tpl->view('page_example');
+  $this->smarty_tpl->view('page_example');
 ```
