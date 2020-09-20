@@ -30,3 +30,25 @@
 ```php
   $this->smarty_tpl->view('page_example');
 ```
+
+- Para enviar multiples datos a nuestra plantilla smarty lo podremos realizar de la siguiente forma:
+```php
+  $data1['data_1'] = 'Example 1';
+  $data2['data_2'] = 'Example 2';
+  $data = array_merge($data1,$data2);
+  $this->smarty_tpl->view('page_example', $data);
+  
+  or
+  
+  $data['data_1'] = 'Example 1';
+  $data['data_2'] = 'Example 2';
+  $this->smarty_tpl->view('page_example', $data);
+```
+
+- En nuestra plantilla podremos imprimir el registro:
+```html
+  <body>
+    <h1>{$data_1}</h1>
+    <h2>{$data_2}</h2>
+  </body>
+```
