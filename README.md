@@ -22,6 +22,6 @@
 - Creamos una plantilla en nuestra carpeta **template** con el formato **.tpl**
 
 - En nuestro controlador renderizaremos la vista usando:
-```
+```php
  $this->smarty_tpl->view('page_example');
 ```
