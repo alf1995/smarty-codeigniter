@@ -9,6 +9,6 @@ class Welcome extends CI_Controller {
 		$data['titulo'] = 'Codeigniter - Template Smarty';
 		$data['body'] = 'Bienvenido - CI + Smarty';
 		$data = array_merge($data);
-        $this->smarty_tpl->view('welcome_message', $data);
+        	$this->smarty_tpl->view('welcome_message', $data);
 	}
 }
